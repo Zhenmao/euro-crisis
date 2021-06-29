@@ -1,0 +1,85 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75rem;
+  background-color: #eeeeee;
+}
+
+h1 {
+  font-family: "Alfa Slab One", cursive;
+  font-weight: 400;
+}
+
+a {
+  color: #6c757d;
+}
+
+.container-xl {
+  max-width: 1140px;
+}
+
+/* Globe */
+.globe .globe__sphere {
+  stroke: #212121;
+  fill: #ffffff;
+}
+
+.globe .globe__land {
+  fill: #e0e0e0;
+}
+
+.globe .globe__title {
+  fill: #212121;
+  text-transform: capitalize;
+}
+
+/* Sankey */
+.sankey {
+  min-width: 600px;
+  position: relative;
+}
+
+.sankey > canvas,
+.sankey > svg {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.sankey .sankey-path {
+  fill: none;
+  stroke: #ffffff;
+}
+
+.sankey .sankey-label {
+  color: #212121;
+}
+
+.sankey .sankey-label.is-muted {
+  color: #bdbdbd;
+}
+
+.sankey .sankey-label__rect {
+  fill: #ffffff;
+}
+
+.sankey .out-bg-bar__rect,
+.sankey .in-bg-bar__rect {
+  fill: #e0e0e0;
+}
+
+.sankey .out-fg-bar__rect {
+  stroke: transparent;
+}
+
+.sankey .in-fg-bar__rect {
+  stroke: #eeeeee;
+  stroke-width: 0.5;
+}
+
+.sankey .out-labels,
+.sankey .in-labels {
+  color: #bdbdbd;
+}

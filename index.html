@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Euro Crisis</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body class="p-3 py-md-5 container-xl">
+    <main>
+      <div class="row g-4">
+        <div class="col-md-auto d-lg-flex flex-column">
+          <h1 class="h3 mb-5 text-uppercase">Euro Crisis</h1>
+          <div id="globe-container"></div>
+          <div class="pt-5 mt-auto text-muted d-none d-lg-block">
+            <ul class="list-unstyled">
+              <li>
+                Data source:
+                <a href="https://observablehq.com/@d3/directed-chord-diagram"
+                  >Directed Chord Diagram</a
+                >
+              </li>
+              <li>
+                Original data:
+                <a
+                  href="http://archive.nytimes.com/www.nytimes.com/interactive/2011/10/23/sunday-review/an-overview-of-the-euro-crisis.html"
+                  >An Overview of the Euro Crisis</a
+                >
+              </li>
+              <li>
+                Visualization inspiration:
+                <a
+                  href="https://observablehq.com/@benjamesdavis/eu-fishing-flow"
+                  >EU Fishing Flow</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div id="sankey-container"></div>
+        </div>
+      </div>
+    </main>
+    <footer class="pt-5 my-5 text-muted d-block d-lg-none">
+      <ul class="list-unstyled">
+        <li>
+          Data source:
+          <a href="https://observablehq.com/@d3/directed-chord-diagram"
+            >Directed Chord Diagram</a
+          >
+        </li>
+        <li>
+          Original data:
+          <a
+            href="http://archive.nytimes.com/www.nytimes.com/interactive/2011/10/23/sunday-review/an-overview-of-the-euro-crisis.html"
+            >An Overview of the Euro Crisis</a
+          >
+        </li>
+        <li>
+          Visualization inspiration:
+          <a href="https://observablehq.com/@benjamesdavis/eu-fishing-flow"
+            >EU Fishing Flow</a
+          >
+        </li>
+      </ul>
+    </footer>
+    <!-- D3 JS -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- Topojson JS -->
+    <script src="https://unpkg.com/topojson@3"></script>
+    <!-- JS -->
+    <script src="js/process-data.js"></script>
+    <script src="js/versor.js"></script>
+    <script src="js/globe.js"></script>
+    <script src="js/sankey.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
